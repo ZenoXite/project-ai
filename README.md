@@ -38,8 +38,8 @@ A lightweight, CLI-based autonomous developer agent built with Python. The agent
    pip install -r requirements.txt
 
 4. Configure environment variables:
+   Create a .env file in the root directory:
      ```bash
-     Create a .env file in the root directory:
      OPENROUTER_API_KEY=your_api_key_here
 
 5. Run the Agent Via Terminal :
