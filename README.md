@@ -23,27 +23,28 @@ A lightweight, CLI-based autonomous developer agent built with Python. The agent
 
 ## Installation & Setup
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```bash
    git clone https://github.com/ZenoXite/project-ai.git
    cd project-ai
 
-2.Set up a virtual environment:
+2. Set up a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
 
-  python3 -m venv venv
-  source venv/bin/activate
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
 
-3.Install dependencies:
-
-  pip install -r requirements.txt
-
-4.Configure environment variables:
-  
-  Create a .env file in the root directory:
-  OPENROUTER_API_KEY=your_api_key_here
+4. Configure environment variables:
+     ```bash
+     Create a .env file in the root directory:
+     OPENROUTER_API_KEY=your_api_key_here
 
 5. Run the Agent Via Terminal :
-  python main.py "Locate tests that are failing and update the implementation to pass them."
+   ```bash
+   python main.py "Locate tests that are failing and update the implementation to pass them."
 
 Security Notice
 This agent executes file writes and commands directly on your local machine. Use caution when running it inside non-containerized environments or outside of version-controlled repositories.
